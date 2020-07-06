@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'barcode-scanner-sample';
+  code: string;
+
+  read(code: string) {
+    this.code = code;
+  }
 }
